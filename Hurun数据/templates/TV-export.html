@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>电视分析结果</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+<form method="POST" action="/skip">
+    <select name="option">
+        {% for L in list %}
+            <option value="{{ L }}">{{ L }}</option>
+        {% endfor %}
+    </select>
+<p><input value='skip' type='SUBMIT'></p>
+</form>
+<HR SIZE=5>
+    <div id="f53b4fdb0ae342c4bac219c34a69aca5" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_f53b4fdb0ae342c4bac219c34a69aca5 = echarts.init(
+            document.getElementById('f53b4fdb0ae342c4bac219c34a69aca5'), 'white', {renderer: 'canvas'});
+        var option_f53b4fdb0ae342c4bac219c34a69aca5 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "\u7535\u89c6\u8282\u76ee\u51fa\u53e3\u603b\u989d",
+            "data": [
+                66909.13,
+                51331.91,
+                27225.71,
+                18165.57,
+                22824.19,
+                22662.45,
+                21010.15,
+                9173.03
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u7535\u89c6\u8282\u76ee\u51fa\u53e3\u603b\u989d"
+            ],
+            "selected": {
+                "\u7535\u89c6\u8282\u76ee\u51fa\u53e3\u603b\u989d": true
+            },
+            "show": true
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2016\u5e74",
+                "2015\u5e74",
+                "2014\u5e74",
+                "2013\u5e74",
+                "2012\u5e74",
+                "2011\u5e74",
+                "2010\u5e74",
+                "2009\u5e74"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u7535\u89c6\u8282\u76ee\u51fa\u53e3\u603b\u989d",
+            "subtext": "\u7535\u89c6\u8282\u76ee\u51fa\u53e3\u603b\u989d"
+        }
+    ]
+};
+        chart_f53b4fdb0ae342c4bac219c34a69aca5.setOption(option_f53b4fdb0ae342c4bac219c34a69aca5);
+    </script>
+<h4>数据内容：</h4>
+{{ the_res|safe }}
+<h4>其余分析链接：</h4>
+<ul>
+    <a style="line-height: 16px" href="/TV-export">电视出口总额</a>
+    <a style="line-height: 16px" href="/total-transmission">二零一八年分省传输网络总量地理图</a>
+    <a style="line-height: 16px" href="/total">欧洲与美洲出口总额</a>
+</ul>
+</body>
+</html>

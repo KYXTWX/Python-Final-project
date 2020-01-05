@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>欧洲与美洲出口总额</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+<form method="POST" action="/skip">
+    <select name="option">
+        {% for L in list %}
+            <option value="{{ L }}">{{ L }}</option>
+        {% endfor %}
+    </select>
+<p><input value='skip' type='SUBMIT'></p>
+</form>
+    <div id="3b3f97125be04ce48be90de25cfaf15e" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_3b3f97125be04ce48be90de25cfaf15e = echarts.init(
+            document.getElementById('3b3f97125be04ce48be90de25cfaf15e'), 'white', {renderer: 'canvas'});
+        var option_3b3f97125be04ce48be90de25cfaf15e = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#d14a61",
+        "#5793f3",
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "\u5e74\u5ea6\u6b27\u6d32\u7535\u89c6\u51fa\u53e3\u989d",
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    "2016\u5e74",
+                    1831.47
+                ],
+                [
+                    "2015\u5e74",
+                    4859.56
+                ],
+                [
+                    "2014\u5e74",
+                    2178.29
+                ],
+                [
+                    "2013\u5e74",
+                    3922.08
+                ],
+                [
+                    "2012\u5e74",
+                    2429.14
+                ],
+                [
+                    "2011\u5e74",
+                    567.07
+                ],
+                [
+                    "2010\u5e74",
+                    2277.44
+                ],
+                [
+                    "2009\u5e74",
+                    728.58
+                ]
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "bar",
+            "name": "\u5e74\u5ea6\u7f8e\u6d32\u7535\u89c6\u51fa\u53e3\u989d",
+            "yAxisIndex": 1,
+            "data": [
+                [
+                    "2016\u5e74",
+                    2088.18
+                ],
+                [
+                    "2015\u5e74",
+                    6937.54
+                ],
+                [
+                    "2014\u5e74",
+                    3224.97
+                ],
+                [
+                    "2013\u5e74",
+                    3264.9
+                ],
+                [
+                    "2012\u5e74",
+                    3021.81
+                ],
+                [
+                    "2011\u5e74",
+                    2235.19
+                ],
+                [
+                    "2010\u5e74",
+                    null
+                ],
+                [
+                    "2009\u5e74",
+                    null
+                ]
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "line",
+            "name": "\u5e74\u5ea6\u5927\u6d0b\u6d32\u7535\u89c6\u51fa\u53e3\u989d",
+            "connectNulls": false,
+            "yAxisIndex": 2,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2015\u5e74",
+                    [
+                        "2016\u5e74",
+                        304.26
+                    ]
+                ],
+                [
+                    "2014\u5e74",
+                    [
+                        "2015\u5e74",
+                        1361.09
+                    ]
+                ],
+                [
+                    "2013\u5e74",
+                    [
+                        "2014\u5e74",
+                        125.2
+                    ]
+                ],
+                [
+                    "2012\u5e74",
+                    [
+                        "2013\u5e74",
+                        471.77
+                    ]
+                ],
+                [
+                    "2011\u5e74",
+                    [
+                        "2012\u5e74",
+                        2999.33
+                    ]
+                ],
+                [
+                    "2010\u5e74",
+                    [
+                        "2011\u5e74",
+                        15.0
+                    ]
+                ],
+                [
+                    "2009\u5e74",
+                    [
+                        "2010\u5e74",
+                        null
+                    ]
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u5e74\u5ea6\u6b27\u6d32\u7535\u89c6\u51fa\u53e3\u989d",
+                "\u5e74\u5ea6\u7f8e\u6d32\u7535\u89c6\u51fa\u53e3\u989d",
+                "\u5e74\u5ea6\u5927\u6d0b\u6d32\u7535\u89c6\u51fa\u53e3\u989d"
+            ],
+            "selected": {
+                "\u5e74\u5ea6\u6b27\u6d32\u7535\u89c6\u51fa\u53e3\u989d": true,
+                "\u5e74\u5ea6\u7f8e\u6d32\u7535\u89c6\u51fa\u53e3\u989d": true
+            },
+            "show": true
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2015\u5e74",
+                "2014\u5e74",
+                "2013\u5e74",
+                "2012\u5e74",
+                "2011\u5e74",
+                "2010\u5e74",
+                "2009\u5e74"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "\u5e74\u5ea6\u4e9a\u6d32\u7535\u89c6\u51fa\u53e3\u989d",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLine": {
+                "show": true,
+                "onZero": true,
+                "onZeroAxisIndex": 0,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid",
+                    "color": "#5793f3"
+                }
+            },
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{value} \u4e07\u5143"
+            },
+            "inverse": false,
+            "position": "right",
+            "offset": 80,
+            "splitNumber": 5,
+            "min": 0,
+            "max": 15000,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        },
+        {
+            "type": "value",
+            "name": "\u5e74\u5ea6\u6b27\u6d32\u7535\u89c6\u51fa\u53e3\u989d",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLine": {
+                "show": true,
+                "onZero": true,
+                "onZeroAxisIndex": 0,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid",
+                    "color": "#d14a61"
+                }
+            },
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{value} \u4e07\u5143"
+            },
+            "inverse": false,
+            "position": "right",
+            "offset": 0,
+            "splitNumber": 5,
+            "min": 0,
+            "max": 15000,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        },
+        {
+            "type": "value",
+            "name": "\u5e74\u5ea6\u6b27\u6d32\u7535\u89c6\u51fa\u53e3\u989d",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLine": {
+                "show": true,
+                "onZero": true,
+                "onZeroAxisIndex": 0,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid",
+                    "color": "#675bba"
+                }
+            },
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{value} \u4e07\u5143"
+            },
+            "inverse": false,
+            "position": "left",
+            "offset": 0,
+            "splitNumber": 5,
+            "min": 0,
+            "max": 15000,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u56fd\u5bb6\u7535\u89c6\u8282\u76ee\u51fa\u53e3"
+        }
+    ],
+    "grid": [
+        {
+            "left": "10%",
+            "right": "20%"
+        }
+    ]
+};
+        chart_3b3f97125be04ce48be90de25cfaf15e.setOption(option_3b3f97125be04ce48be90de25cfaf15e);
+    </script>
+<h4>数据内容：</h4>
+{{ the_res|safe }}
+<h4>其余分析链接：</h4>
+<ul>
+    <a style="line-height: 16px" href="/TV-export">电视出口总额</a>
+    <a style="line-height: 16px" href="/total-transmission">二零一八年分省传输网络总量地理图</a>
+    <a style="line-height: 16px" href="/total">欧洲与美洲出口总额</a>
+</ul>
+</body>
+</html>
